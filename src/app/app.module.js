@@ -1,7 +1,7 @@
 import angular from 'angular';
 import AppCore from './core/core.module';
-import Header from './features/headerBar/headerBar.module';
-import SearchItinerary from './features/searchItinerary/searchItinerary.module';
+import HeaderTable from './features/headerTable/headerTable.module';
+import MainTable from './features/mainTable/mainTable.module';
 
 // Construct Module
 import appComponent from './app.component';
@@ -20,8 +20,8 @@ const appModule = angular.module('app', [
 	AppCore.name,
 
 	// Features
-	Header.name,
-	SearchItinerary.name
+	HeaderTable.name,
+	MainTable.name
 ])
 	.component('app', appComponent)
 	.config(config);

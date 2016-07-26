@@ -8,11 +8,11 @@
  *
  */
 const appConfig = function(
-	$urlRouterProvider) {
-
+	$urlRouterProvider, $locationProvider) {
+	$locationProvider.html5Mode({enabled: true, requireBase: true});
 	$urlRouterProvider
-		.when('', '/search')
-		.otherwise('/search');
+		.when('', '/home')
+		.otherwise('/home');
 };
 
 export default appConfig;
